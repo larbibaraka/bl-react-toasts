@@ -1,6 +1,6 @@
 {
   "name": "bl-react-toast",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "a configurable toasts for react projects",
   "main": "lib/toast.js",
   "types": "src/toast.d.ts",
