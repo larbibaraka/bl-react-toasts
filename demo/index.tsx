@@ -1,15 +1,28 @@
 import * as React from 'react';
 import * as ReactDOM from "react-dom";
-import Index from './../src/index';
-class IndexApp extends React.Component {
-  showToast = () => {
 
+import Toast from './../src/toast';
+  enum ToastPosition {
+    TOP = "position_top",
+    BOTTOM = "position_bottom",
+    LEFT = "position_left",
+    RIGHT = "position_right"
+  }
+class IndexApp extends React.Component {
+   state = {
+     show : true
+   }
+  showToast = () => {
+    let show = this.state ? false : true;
+    this.setState({
+      show
+    })
   }
   render() {
-    return (
+  return (
     <div>
       <button onClick={this.showToast}>open toast</button>
-      <Index/>
+        <Toast show={this.state.show} backgroundColor={"red"} text={"this is a text of the toast"} position={"position_top"} duration={1}/>
      </div>
      )
   }
