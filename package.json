@@ -13,6 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/larbibaraka/bl-react-toasts.git"
   },
+  "bugs": {
+    "url": "https://github.com/larbibaraka/bl-react-toasts/issues"
+  },
+  "homepage": "https://github.com/larbibaraka/bl-react-toasts#readme",
   "keywords": [
     "notify",
     "notification",
