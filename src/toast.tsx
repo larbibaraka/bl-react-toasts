@@ -1,5 +1,6 @@
 import * as React from 'react';
-
+// by baraka larbi :laridev@gmail.com:
+//facebook : https://www.facebook.com/laridevBl
 export default class Toast extends React.Component {
     
     state  = {

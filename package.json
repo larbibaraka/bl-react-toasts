@@ -1,12 +1,13 @@
 {
-  "name": "bl-react-toasts",
+  "name": "bl-react-toast",
   "version": "1.0.0",
   "description": "a configurable toasts for react projects",
-  "main": "index.js",
+  "main": "lib/toast.js",
+  "types": "src/toast.d.ts",
   "scripts": {
     "start": "parcel demo/index.html",
-    "build": "parcel build src/index.tsx -d lib/",
-    "generate":"dts-generator --name laridev-react-component --main src/index.tsx --project . --indent ' ' --out src/index.d.ts"
+    "build": "parcel build src/toast.tsx -d lib/",
+    "generate": "dts-generator --name bl-react-toast --main demo/index.tsx --project . --indent ' ' --out demo/toast.d.ts"
   },
   "keywords": [
     "notify",
@@ -23,11 +24,23 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "dts-generator": "^3.0.0",
     "parcel-bundler": "^1.12.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "typescript": "^3.5.2"
-  }
+  },
+  "files": [
+    "lib/toast.js",
+    "src/toast.tsx",
+    "src/toast.d.ts"
+  ]
 }

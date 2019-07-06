@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from "react-dom";
 
-import Toast from './../src/toast';
+import Toast from './../lib/toast';
   enum ToastPosition {
     TOP = "position_top",
     BOTTOM = "position_bottom",
