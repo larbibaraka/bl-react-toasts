@@ -47,6 +47,7 @@
     "typescript": "^3.5.2"
   },
   "files": [
+    "css/toasts.css",
     "lib/toast.js",
     "src/toast.tsx",
     "src/toast.d.ts"
