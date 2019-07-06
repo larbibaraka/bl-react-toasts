@@ -9,6 +9,10 @@
     "build": "parcel build src/toast.tsx -d lib/",
     "generate": "dts-generator --name bl-react-toast --main demo/index.tsx --project . --indent ' ' --out demo/toast.d.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larbibaraka/bl-react-toasts.git"
+  },
   "keywords": [
     "notify",
     "notification",
